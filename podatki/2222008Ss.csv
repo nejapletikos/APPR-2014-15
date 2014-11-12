@@ -1,0 +1,41 @@
+"Cestnoprometne nesreèe in udeleženci v nesreèah statistiène regije, Slovenija, letno"
+
+" ";"2011";" ";" ";" ";" ";" ";" ";" ";" ";"2012";" ";" ";" ";" ";" ";" ";" ";" ";"2013";" ";" ";" ";" ";" ";" ";" ";" "
+" ";"Prometne nesreèe - SKUPAJ";"Prometne nesreèe s smrtnim izidom";"Prometne nesreèe s telesno poškodbo";"Prometne nesreèe z materialno škodo";"Število udeležencev - SKUPAJ";"Število udeležencev - mrtvi";"Število udeležencev s hudo telesno poškodbo";"Število udeležencev z lahko telesno poškodbo";"Število udeležencev brez poškodbe";"Prometne nesreèe - SKUPAJ";"Prometne nesreèe s smrtnim izidom";"Prometne nesreèe s telesno poškodbo";"Prometne nesreèe z materialno škodo";"Število udeležencev - SKUPAJ";"Število udeležencev - mrtvi";"Število udeležencev s hudo telesno poškodbo";"Število udeležencev z lahko telesno poškodbo";"Število udeležencev brez poškodbe";"Prometne nesreèe - SKUPAJ";"Prometne nesreèe s smrtnim izidom";"Prometne nesreèe s telesno poškodbo";"Prometne nesreèe z materialno škodo";"Število udeležencev - SKUPAJ";"Število udeležencev - mrtvi";"Število udeležencev s hudo telesno poškodbo";"Število udeležencev z lahko telesno poškodbo";"Število udeležencev brez poškodbe"
+"SLOVENIJA";22913;129;7089;15695;42105;141;919;8754;32291;22035;122;6742;15171;39971;130;848;8300;30693;18904;116;6426;12362;34481;125;708;8034;25614
+"Pomurska";1683;3;397;1283;2550;3;54;489;2004;1639;9;326;1304;2423;9;55;374;1985;1045;8;271;766;1622;9;22;312;1279
+"Podravska";4528;27;1531;2970;8420;32;110;2006;6272;4279;15;1424;2840;7875;15;107;1857;5896;3724;16;1368;2340;6847;16;92;1825;4914
+"Koroška";600;6;213;381;1124;7;28;273;816;656;5;214;437;1179;6;27;271;875;510;3;179;328;975;3;7;265;700
+"Savinjska";2736;10;1058;1668;5268;10;129;1382;3747;3012;16;1136;1860;5676;16;128;1493;4039;2706;19;1096;1591;5147;20;121;1471;3535
+"Zasavska";280;0;104;176;534;0;12;120;402;323;4;115;204;601;6;13;146;436;195;1;75;119;386;1;6;101;278
+"Spodnjeposavska";584;3;158;423;1020;3;23;188;806;514;3;143;368;903;3;23;151;726;432;9;135;288;802;12;31;158;601
+"Jugovzhodna Slovenija";1190;10;425;755;2114;10;66;514;1524;1162;8;393;761;2080;9;48;486;1537;1091;6;383;702;1910;6;50;488;1366
+"Osrednjeslovenska";6184;32;1832;4320;12059;33;239;2284;9503;5697;21;1717;3959;11031;24;199;2129;8679;5259;19;1589;3651;9976;21;157;2000;7798
+"Gorenjska";1831;14;495;1322;3232;16;90;570;2556;1658;16;451;1191;2846;16;83;491;2256;1449;15;489;945;2457;15;80;502;1860
+"Notranjsko-kraška";552;7;185;360;1062;7;39;231;785;488;6;163;319;889;6;36;189;658;408;7;160;241;793;8;26;217;542
+"Goriška";1012;10;318;684;1731;11;63;327;1330;1022;11;313;698;1731;12;68;323;1328;887;6;302;579;1497;6;59;294;1138
+"Obalno-kraška";1733;7;373;1353;2991;9;66;370;2546;1585;8;347;1230;2737;8;61;390;2278;1198;7;379;812;2069;8;57;401;1603
+
+"Vir: SURS, Ministrstvo za notranje zadeve - Policija"
+
+"Povezane vsebine: "
+"- (seznam HREF=http://www.stat.si/doc/metod_pojasnila/22-220-MP.pdf "
+"target=_blank) Metodološka pojasnila "
+"- (seznam "
+"HREF=http://www.stat.si/koledar.asp?pod=22&kon=220&DatumOd=1.1.2005&D-"
+"atumDo=Date() target=_blank) Koledar objav "
+"- (seznam HREF=http://www.stat.si/metodologija_vpr.asp?pod=22&kon=220 "
+"target=_blank) Vprašalniki statistiènega raziskovanja "
+
+"Podatki so teritorialno razvršèeni po Klasifikaciji statistiènih "
+"teritorialnih enot v Evropski uniji (The Classification  of "
+"Territorial Units for Statistics) – NUTS ((seznam "
+"HREF=../database/Meta/Klas/NUTS.htm TARGET=_blank) opis in "
+"pojasnila), raven NUTS 3. "
+"Opombe o spremembah posameznih regij so zapisane k vsaki spremenjeni "
+"regiji in so ob izpisu tabele na zaslon dostopne s klikom na ikono za "
+"opombe (zvezdica). V opombah je na zaèetku naveden datum, s katerim "
+"je opisana teritorialna sprememba upoštevana pri teritorialnem "
+"razvršèanju enot za statistiène namene. "
+" "
+
