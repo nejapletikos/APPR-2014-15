@@ -6,8 +6,11 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2014/15.
 
 ## Tematika
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal. Tukaj boste
-napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+Ukvarjala se bom s številom prometnih nesreč v Sloveniji v letih 2011,2012 in 2013. Prometne nesreče bom razdelila na 12 regij. Primerjala bom število nesreč v teh regijah, koliko jih je bilo s smrtnim izidom, s telesno poškodbo, materialno škodo in po poškodbah udeležencev. Tako bom ugotovila v kateri regiji je naveč prometnih nesreč, v kateri jih je največ s smrtnim izidom, kje najmanj in podobno. Podatke bom dobila na:
+http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=2222008S&ti=&path=../Database/Ekonomsko/22_transport/07_22220_cestno_prometne_nesrece/&lang=2 (CSV oblika)
+http://www.stat.si/novica_prikazi.aspx?id=4973
+http://www.stat.si/novica_prikazi.aspx?id=5741
+http://www.stat.si/novica_prikazi.aspx?ID=6440
 
 ## Program
 
