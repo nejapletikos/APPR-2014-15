@@ -40,3 +40,7 @@ uvoziNesrece <- function(){
 
 cat("Uvažam podatke o nesrečah..\n")
 nesrece <- uvoziNesrece()
+
+nesrece <- nesrece[-c(1), ]
+rownames(nesrece) <- paste(c("SLOVENIJA", "Pomurska", "Podravska", "Koroška", "Savinjska", "Zasavska", "Spodnjeposavska", "Jugovzhodna Slovenija", "Osrednjeslovenska", "Gorenjska", "Notranjsko-kraška", "Goriška", "Obalno-Kraška"), sep = " ")
+nesrece <- nesrece[ ,-c(1)]
