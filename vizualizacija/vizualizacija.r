@@ -42,17 +42,20 @@ cat("Rišem zemljevid slovenije...\n")
 pdf("slike/slovenija1.pdf")
 
 koordinate1 <- coordinates(slo)
-imena1 <- as.character(slo$NAME_1)
+imena1 <- rownames(rregije)
+
 rownames(koordinate1) <- imena1
 names(imena1) <- imena1
-koordinate1["Obalno-kraška",1] <- koordinate1["Obalno-kraška",1]+0.1 #levo,desno
-koordinate1["Obalno-kraška",2] <- koordinate1["Obalno-kraška",2]+0.025 #dol,gor
+obalnokraska <- grep("Obalno", imena1)
+notranjskokraska <- grep("Notranjsko", imena1)
+koordinate1[obalnokraska,1] <- koordinate1[obalnokraska,1]+0.1 #levo,desno
+koordinate1[obalnokraska,2] <- koordinate1[obalnokraska,2]+0.025 #dol,gor
 koordinate1["Zasavska",2] <- koordinate1["Zasavska",2]+0.01
-koordinate1["Spodnjeposavska",1] <- koordinate1["Spodnjeposavska",1]+0.08
-koordinate1["Spodnjeposavska",2] <- koordinate1["Spodnjeposavska",2]
+koordinate1["Spodnjeposavska",1] <- koordinate1["Spodnjeposavska",1]+0.05
+koordinate1["Spodnjeposavska",2] <- koordinate1["Spodnjeposavska",2]+0.02
 imena1["Jugovzhodna Slovenija"] <- "Jugovzhodna\nSlovenija"
-imena1["Notranjsko-kraška"] <- "Notranjsko-\nkraška"
-imena1["Obalno-kraška"] <- "Obalno-\nkraška"
+imena1[notranjskokraska] <- "Notranjsko-\nkraška"
+imena1[obalnokraska] <- "Obalno-\nkraška"
 
 #n = 100
 #barve = topo.colors(n)[1+(n-1)*(druzine$povprecje-min.povprecje)/(max.povprecje-min.povprecje)]
@@ -71,6 +74,8 @@ k <- 5 # število vnosov v legendi
 lestvica <- seq(min.nesrece, max.nesrece, (max.nesrece-min.nesrece)/(k-1))
 legend("bottomright", legend = round(lestvica),
        fill = barve[seq(1, n, (n-1)/(k-1))], bg = "white")
+
+text(koordinate1, imena1, cex = 0.5)
 
 dev.off()
 

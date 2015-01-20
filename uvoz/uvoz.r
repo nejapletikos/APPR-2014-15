@@ -19,23 +19,12 @@
 # fazah.
 
 uvoziNesrece <- function(){
+  kat <- c("Skupaj", "Smrtni", "Poskodbe", "Skoda", "Udelezenci",
+           "Mrtvi", "Huda", "Lahka", "Brez")
+  leta <- 2011:2013
   return(read.table("podatki/nesreceurejeno.csv", sep = ";", as.is = TRUE, header = TRUE,
-                    col.names = c("Regija","Prometne nesreče - SKUPAJ(2011)", "Prometne nesreče s smrtnim izidom(2011)",
-                                  "Prometne nesreče s telesno poškodbo(2011)", "Prometne nesreče z materialno škodo(2011)",
-                                  "Število udeležencev - SKUPAJ(2011)","Število udeležencev - mrtvi(2011)",
-                                  "Število udeležencev s hudo telesno poškodbo(2011)", "Število udeležencev z lahko telesno poškodbo(2011)",
-                                  "Število udeležencev brez poškodbe(2011)",
-                                  "Prometne nesreče - SKUPAJ(2012)", "Prometne nesreče s smrtnim izidom(2012)",
-                                  "Prometne nesreče s telesno poškodbo(2012)", "Prometne nesreče z materialno škodo(2012)",
-                                  "Število udeležencev - SKUPAJ(2012)","Število udeležencev - mrtvi(2012)",
-                                  "Število udeležencev s hudo telesno poškodbo(2012)", "Število udeležencev z lahko telesno poškodbo(2012)",
-                                  "Število udeležencev brez poškodbe(2012)",
-                                  "Prometne nesreče - SKUPAJ(2013)", "Prometne nesreče s smrtnim izidom(2013)",
-                                  "Prometne nesreče s telesno poškodbo(2013)", "Prometne nesreče z materialno škodo(2013)",
-                                  "Število udeležencev - SKUPAJ(2013)","Število udeležencev - mrtvi(2013)",
-                                  "Število udeležencev s hudo telesno poškodbo(2013)", "Število udeležencev z lahko telesno poškodbo(2013)",
-                                  "Število udeležencev brez poškodbe(2013)"),
-                    fileEncoding = "Windows-1250"))
+                    col.names = c("Regija",as.vector(outer(kat, leta, paste0))),
+                    fileEncoding = "Windows-1250", row.names = 1))
 }
 
 cat("Uvažam podatke o nesrečah..\n")
