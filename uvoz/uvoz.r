@@ -19,7 +19,7 @@
 # fazah.
 
 uvoziNesrece <- function(){
-  return(read.table("podatki/nesreceurejeno.csv", sep = ";", as.is = TRUE,
+  return(read.table("podatki/nesreceurejeno.csv", sep = ";", as.is = TRUE, header = TRUE,
                     col.names = c("Regija","Prometne nesreče - SKUPAJ(2011)", "Prometne nesreče s smrtnim izidom(2011)",
                                   "Prometne nesreče s telesno poškodbo(2011)", "Prometne nesreče z materialno škodo(2011)",
                                   "Število udeležencev - SKUPAJ(2011)","Število udeležencev - mrtvi(2011)",
@@ -41,6 +41,7 @@ uvoziNesrece <- function(){
 cat("Uvažam podatke o nesrečah..\n")
 nesrece <- uvoziNesrece()
 
-nesrece <- nesrece[-c(1), ]
-rownames(nesrece) <- paste(c("SLOVENIJA", "Pomurska", "Podravska", "Koroška", "Savinjska", "Zasavska", "Spodnjeposavska", "Jugovzhodna Slovenija", "Osrednjeslovenska", "Gorenjska", "Notranjsko-kraška", "Goriška", "Obalno-Kraška"), sep = " ")
-nesrece <- nesrece[ ,-c(1)]
+#nesrece <- nesrece[-c(1), ]
+#rownames(nesrece) <- paste(c("SLOVENIJA", "Pomurska", "Podravska", "Koroška", "Savinjska", "Zasavska", "Spodnjeposavska", "Jugovzhodna Slovenija", "Osrednjeslovenska", "Gorenjska", "Notranjsko-kraška", "Goriška", "Obalno-Kraška"), sep = " ")
+#nesrece <- nesrece[ ,-c(1)]
+

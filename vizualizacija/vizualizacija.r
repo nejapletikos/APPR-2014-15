@@ -27,7 +27,7 @@ preuredi <- function(podatki, zemljevid) {
 }
 
 # Preuredimo podatke, da jih bomo lahko izrisali na zemljevid.
-rregije <- preuredi(regije[-1,], slo)
+rregije <- preuredi(nesrece[-1,], slo)
 
 # Izračunamo povprečno velikost družine.
 #druzine$povprecje <- apply(druzine[1:4], 1, function(x) sum(x*(1:4))/sum(x))
@@ -58,8 +58,19 @@ imena1["Obalno-kraška"] <- "Obalno-\nkraška"
 #barve = topo.colors(n)[1+(n-1)*(druzine$povprecje-min.povprecje)/(max.povprecje-min.povprecje)]
 #plot(obcine, col = barve)
 
-n = 100
-barve =rgb(1, 1, (n:1)/n)[unlist(1+(n-1)*norm.povprecje)]
-plot(slo, col = barve, bg="lightblue")
+min.nesrece <- min(rregije[,1], na.rm=TRUE)
+max.nesrece <- max(rregije[,1], na.rm=TRUE)
+norm.nesrece <- (rregije[,1]-min.nesrece)/(max.nesrece-min.nesrece)
+
+n <- 100
+barve <- rgb(1, 1, (n:1)/n)
+plot(slo, col = barve[unlist(1+(n-1)*norm.nesrece)], bg="lightblue")
 title("Prometne nesreče v Sloveniji 2011")
+
+k <- 5 # število vnosov v legendi
+lestvica <- seq(min.nesrece, max.nesrece, (max.nesrece-min.nesrece)/(k-1))
+legend("bottomright", legend = round(lestvica),
+       fill = barve[seq(1, n, (n-1)/(k-1))], bg = "white")
+
 dev.off()
+
