@@ -14,23 +14,26 @@ Analiza podatkov s programom R}
 
 \section{Izbira teme}
 
-V prvi fazi sem si izbrala temo in sicer prometne nesreče po regijah v Sloveniji. Primerjala bom število prometnih nesreč po vrstah poškodbe (s smrtnim izidom, telesno poškodbo ali zgolj materialna škoda) in po poškodbah udeležencev v prometnih nesrečah (smrtne žrtve, huda/lažja/brez poškodbe). Poskušala bom ugotoviti kako se po regijah število prometnih nesreč razlikuje, ali katera posebej izstopa s številom smrtnih žrtev, zgolj po številu prometnih nesreč itd.
+V prvi fazi sem si izbrala temo in sicer prometne nesreče po regijah v Sloveniji. Primerjala bom število prometnih nesreč po vrstah poškodbe (s smrtnim izidom, telesno poškodbo ali zgolj materialna škoda) in po poškodbah udeležencev v prometnih nesrečah (smrtne žrtve, huda/lažja/brez poškodbe). Pri tem so spremenljivke številske (število prometnih nesreč po različnih kriterijih) in pa imenska (slovenske regije). Poskušala bom ugotoviti kako se po regijah število prometnih nesreč razlikuje, ali katera posebej izstopa s številom smrtnih žrtev, zgolj po številu prometnih nesreč itd.
 
 \section{Obdelava, uvoz in čiščenje podatkov}
 
-V drugi fazi sem uvozila tabelo s podatki v CSV obliki. Pri tem sem si pomagala z vajami ki smo jih rešili na faksu in pa z vzorcem ki je bil priložen. Naredila sem še dva grafa, eden prikazuje število prometnih nesreč v letih 2011-2013, drugi pa število udeležencev v prometnih nesrečah v istem časovnem obdobju.
+V drugi fazi sem uvozila tabelo s podatki v CSV obliki, ki sem jo dobila na strani statističnega urada Republike Slovenije. Pri tem sem si pomagala z vajami ki smo jih rešili na faksu in pa z vzorcem, ki je bil priložen. \par
+Z uporabo podatkov iz tabele, sem naredila še dva grafa. Prvi graf prikazuje skupno število prometnih nesreč v letih 2011, 2012 in 2013. Iz grafa je razvidno, da je število prometnih nesreč z leti upadalo. Drugi graf prikazuje število udeležencev v prometnih nesrečah v istem časovnem obdobju. Skladno z upadom števila prometnih nesreč je upadalo tudi število udeležencev v le-teh.
+
+\newpage
 
 Graf števila prometnih nesreč v letih 2011-2013:
 
-\includegraphics[width=\textwidth]{../slike/skupajnesrece.pdf}
+\includegraphics[width=90mm]{../slike/skupajnesrece.pdf}
 
 Graf števila udeležencev:
 
-\includegraphics[width=\textwidth]{../slike/steviloudelezencev.pdf}
+\includegraphics[width=90mm]{../slike/steviloudelezencev.pdf}
 
 \section{Analiza in vizualizacija podatkov}
 
-V tretji fazi sem uvozila zemljevid Slovenije z vrisanimi regijami, na njem so napisana še imena posameznih regij. Na njemu je prikazano število nesreč v vsaki regiji v letu 2011. Iz zemljevida je razvidno, da je bilo največ nesreč v Osrednjeslovenski in Podravski regiji.
+V tretji fazi sem uvozila zemljevid Slovenije z vrisanimi regijami, na njem so napisana še imena posameznih regij. Na njemu je prikazano število nesreč v vsaki regiji v letu 2011. Iz zemljevida je razvidno, da je bilo največ nesreč v Osrednjeslovenski in Podravski regiji, najmanj pa v Zasavski. Razlog za to je morda skupna dolžina cest v teh regijah ali pa število prebivalcev v posamezni regiji. Osrednjeslovenska regija ima po mojem mnenju nadaljšo skupno dolžino cest in pa največ prebivalcev med vsemi regijami. Menim, da je to razlog za največje število prometnih nesreč v tej regiji.
 
 \makebox[\textwidth][c]{
 \includegraphics[width=1.2\textwidth]{../slike/slovenija1.pdf}
@@ -38,6 +41,27 @@ V tretji fazi sem uvozila zemljevid Slovenije z vrisanimi regijami, na njem so n
 
 \section{Napredna analiza podatkov}
 
+Za četrto fazo sem se odločila, da bom uvozila štiri nove tabele s podatki in sicer:
+\begin{itemize}
+\item Prometne nesreče po lokaciji (avtocesta, v naselju, izven naselja),
+\item prometne nesreče po vrsti ceste (avtoceste, hitre in glavne ceste I., II. reda, turistične, reg. ceste I., II., III. reda, lokalne ceste, naselje z uličnim sistemom, naselje brez uličnega sistema),
+\item prometne nesreče po vrsti udeležencev (avtomobili, tovorna vozila, avtobusi, traktorji, motorna kolesa, kolesa z motorjem) in
+\item prometne nesreče po alkoholiziranosti (moški, ženske, kolesa z motorjem, motorna kolesa, avtomobili).
+\end{itemize}
 
+S pomočjo štirih novih tabel sem naredila štiri grafe:
+
+\includegraphics[width=90mm]{../slike/polokaciji.pdf}
+
+\includegraphics[width=90mm]{../slike/povrsticeste.pdf}
+
+\includegraphics[width=90mm]{../slike/poudelezencih.pdf}
+
+\includegraphics[width=90mm]{../slike/poalkoholu.pdf}
+
+Iz grafov sem poskušala razbrati kaj se bo v prihodnje dogajalo. Število prometnih nesreč po vseh kriterijih v času pada, zaradi tega sem mnenja, da se bo število nesreč še naprej zmanjševalo. K temu bo po mojem mnenju pripomogel tudi razvoj avtomobilske industrije, najbolj bodo k temu pripomogli avtomobili, ki ne bodo potrebovali voznika. \par
+Iz grafov je prav tako razvidno, da se največ prometnih nesreč zgodi v naselju, natančneje v naselju z uličnim sistemom, pri teh prometnih nesrečah pa udeleženci najpogosteje vozijo avtomobil. Za večjo varnost bi blo tako treba v takih naseljih spremeniti prometni režim ali pa ljudi spodbuditi k dodatemu izobraževanju. Ker sama prihajam iz Kopra, kjer je praktično vsako križišče zamenjalo krožno križišče, lahkom opazim da večina voznikov ne pozna pravil, ki so se spremenila v času odkar so opravili vozniški izpit. Problem pri temu je, da večina misli, da pozna vsa pravila in da z njihovim načinom vožnje ni nič narobe, zato se nočejo udeleževati delavnic oz. predavanj o novih cestno prometnih pravilih (v Kopru naprimer, je bila delavnica za vožnjo v krožišču). \par
+Najbolj me je pri analizi podatkov presenetilo to, da je največje število alkoholiziranih udeležencev v prometnih nesrečah moškega spola, natančneje to, da je število bistveno večje od ženskih udeleženk, ki so pregloboko pogledale v kozarec. Glede tega mislim, da je dovolj ozaveščanja, ljudje bi se mogli sami zavedat da po pitju ne smejo iti za volan. Edino kar bi lahko naredili na tem področju je povečati nadzor s strani policije (več kontrol). \par
+S tem sem svoj projekt zaključila. Menim, da sem prišla do zanimivih zaključkov, nisem si mislila, da bodo takšni.
 
 \end{document}
